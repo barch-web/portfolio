@@ -1,0 +1,162 @@
+body{
+   background-color: #f4f4f4;
+   font: 18px Arial, Helvetica, sans-serif; 
+   margin: 0;
+   padding: 0;
+   line-height: 1.6em;
+}
+.navbar-brand{
+   color: rgb(206, 204, 201) !important;
+   font-style: italic !important;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                'Lucida Grande', 'Lucida Sans Unicode', 
+                Geneva, Verdana, sans-serif !important; 
+   height: 42px !important;
+   margin: 0 0 10px 0;
+}
+.nav-link {
+   color: #f4f4f4 !important;
+   margin: 0 12px 0 42px;
+   font-size: 24px !important;
+}
+.jumbotron{
+   margin: 0 auto;
+   padding: 0;
+}
+.container{
+   float: left;
+   width: 50%;
+   padding-left: 25px;
+   margin-left: 18px;
+}
+.container img{
+   width: 250px;
+   height: 250px;
+   border-radius: 200px;
+   float: left;
+}
+.main-heading{
+   color:darkgreen;
+   border-bottom: 3px solid darkblue;
+   width: 250px;
+   margin-left: 8px;
+   font-size: 150%;
+   text-align: center;
+}
+.head-1{
+   color: darkgreen;
+   margin-left: 38px;
+   
+}
+.about{
+   width: 40%;
+   float: right;
+   margin-right: 30pxs;
+   font-size: 14px !important;
+   text-align: center;
+}
+.head-2{
+   color: darkred;
+   text-decoration: underline;
+   font-style: italic;
+   font-size: 150%;
+   text-align: center;
+}
+.slide-container{
+   width: 100%;
+   height: 40%;
+   margin-top: 45px;
+}
+.cert {
+   width: 100%;
+   height: 70vh; 
+   align-items: center; 
+}
+#carouselExampleControls{
+   padding-top: 200px;
+
+}
+.card-body{
+   width: 90%;
+   height: 30%;
+   padding-top: 20px;
+  
+}
+.card{
+   width: 80%;
+   height: 60vh;
+   padding-bottom: 20px;
+}
+.card-body{
+   width: 230px;
+   height: 43px;
+   color: lightgrey;
+   font-size: 20px;
+}
+
+.card{
+   margin-top: 20px;
+   margin-left: 12px;
+   background: #969393;
+}
+.card-body{
+   width: 350px;
+   height: 36px;
+   font-size: 14px;
+}
+.footer{
+   background: #1d1d1d;
+   font-weight: bold;
+   height: 30px;
+   text-align: center;
+   color: blanchedalmond;
+   font-style: inherit;
+}
+@media only screen and (max-width: 600px){
+
+   .container img{
+      align-self: center;
+      margin-bottom: 20px;
+      margin-left: 50px;
+   }
+   .about{
+      float: none;
+      font-size: large;
+      text-align: center;
+      margin-left: 50px;
+      margin-left: 95px;
+   }
+   .content-1{
+      font-size: 22px;
+      text-align: center;
+      margin-left: 60px;
+   }
+   .main-heading{
+      margin-top: 10px;
+      color: darkblue;
+      margin-left: 50px;
+      text-align: center;
+   }
+   .head-1{
+      font-size: 18px;
+      margin-left: 50px;
+      width: 200px;
+      color: darkblue;
+      text-align: center;
+   }
+   .cert{
+      width: 15%;
+      align-items: center;
+   }
+   .card-body{
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      
+   }
+   .card-text{
+      font-size: 12px;
+      font-weight: bold;
+   }
+   
+}
