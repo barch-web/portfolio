@@ -1,0 +1,82 @@
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::selection{
+  background: var(--bg1);
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  width: .7rem;
+}
+html::-webkit-scrollbar-track{
+  background: #222;
+}
+html::-webkit-scrollbar-thumb{
+  background: #111;
+}
+
+body{
+  background: var(--bg3);
+  overflow: hidden;
+  padding-left: 35rem;
+  
+}
+
+section{
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+section .title{
+  position: relative;
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 0.5rem;
+  border-bottom: .3rem solid var(--prim);
+  color: #fff;
+}
+
+section .title::after{
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  font-size: 3rem;
+  color: var(--bg1);
+  padding: 0 0.5rem;
+  background: var(--bg3);
+  transform: translateX(-50%);
+}
+
+.btn{
+  padding: 0.7rem 3rem;
+  background: var(--bg1);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  border-radius: 5rem;
+}
+
+.btn:hover{
+  background: var(--bg2);
+}
+
+.btn i{
+  padding: 0 1.5rem;
+  font-size: 2.2rem;
+  color: var(--bg2);
+}

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Pacifico&family=Ubuntu:wght@500&display=swap');
+
+:root{
+  --bg1: #ffd700;
+  --bg2: crimson;
+  --bg3: #111;
+  --prim: #efefef;
+  
+}
+
+/*Header Section Styles*/
+
+header{
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 40rem;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .user img{
+  height: 23rem;
+  width: 15rem;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 1rem solid var(--bg1);
+}
+
+header .user .name{
+  font-size: 3.5rem;
+  color: var(--prim);
+}
+
+header .user .post{
+  font-size: 3rem;
+  color: var(--bg1);
+  display: inline;
+}
+
+header .navbar{
+  width: 100%;
+}
+
+header .navbar ul{
+  list-style: none;
+  padding: 1.5rem 3rem;
+  
+}
+
+header .navbar ul li a{
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  color: var(--prim);
+  background: var(--bg1);
+  font-size: 2.5rem;
+  border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+  background: var(--bg2);
+}
+
+/*Menu Button Styles*/
+#menu{
+  position: fixed;
+  top: 2rem; right: 2rem;
+  background:  var(--bg1);
+  color: var(--bg3);
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+/*Home Section Styles*/
+
+.home{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+
+}
+
+.home h3{
+  font-size: 3rem;
+  color: #fff;
+}
+
+.home h1{
+  font-size: 7rem;
+  color: #fff;
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 500;
+}
+.home h2{
+  color: #fff;
+  font-size: 3rem;
+}
+.home h2 span{
+  display: inline;
+  font-size: 3rem;
+  color: var(--bg2);
+  font-weight: 600;
+}
+
+.home p{
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem;
+}
+
+/*home pseudo codes*/
+
+.about .title::after{
+  content: "who i am";
+  text-transform: lowercase;
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.about .row .info{
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+
+.about .row .info h3{
+  font-size: 2.5rem;
+  color: var(--bg2);
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.about .row .info h3 span{
+  color: #eee;
+  padding: 0 0.5rem;
+}
+
+.about .row .info .typing-2{
+  color: var(--bg2);
+  padding: 0 0.5rem;
+  font-size: 2.5rem;
+}
+.about .row .counter{
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .row .counter .box{
+  width: 30rem;
+  background: #222;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.about .row .counter .box span{
+  font-size: 4rem;
+  color: var(--bg2);
+}
+
+.about .row .counter .box h3{
+  font-size: 2rem;
+  color: #fff;
+}
+
+/*skills section styles*/
+
+.skills .title::after{
+  content: "what i know";
+  text-transform: lowercase;
+}
+
+.skills .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.skills .row .left{
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+  
+}
+.skills .row .left .text{
+  font-size: 3rem;
+  color: #fff;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+.skills .row .left p{
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 1.5;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills .row .left a{
+  margin-left: 1.5rem;
+}
+
+.skills .row .right{
+  flex: 1 1 45rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skills .row .right .bars{
+  margin-bottom: 1.5rem;
+}
+
+.skills .row .right .info{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.skills .row .right span{  
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.skills .row .right .line{
+  height: 0.7rem;
+  width: 100%;
+  background: var(--bg2);
+  position: relative;
+}
+
+.skills .row .right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--bg1);
+}
+.row .right .html::before{
+  width: 90%;
+}
+.row .right .css::before{
+  width: 80%;
+}
+.row .right .js::before{
+  width: 70%;
+}
+.row .right .react::before{
+  width: 60%;
+}
+.row .right .mysql::before{
+  width: 50%;
+}
+
+/*works*/
+
+.works .title::after{
+  content: "jobs done";
+  text-transform: lowercase;
+}
+
+.works .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.works .box-container .box{
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.works .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.works .box-container .box:hover img{
+  transform: scale(1.2);
+}
+
+/* Contact Section*/
+
+
+.top{
+  position: fixed;
+  bottom: 7.5rem; right: 2rem;
+  z-index: 100;
+  width: 4rem;
+  background: var(--bg1);
+  font-weight: 600;
+  display: none;
+}
+
+
+
+
+/*Responsiveness Styles*/
+
+@media (max-width:1200px){
+
+  html{
+    font-size: 55%;
+  }
+
+  .home{
+    padding: 1rem 4rem;
+  }
+
+}
+
+@media (max-width: 991px){
+
+  header{
+    left: -120%;
+  }  
+
+  #menu{
+    display: block;
+  }
+
+  header.toggle{
+    left: 0;
+  }
+
+  body{
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px){
+
+  html{
+    font-size: 50%;
+  }
+
+ 
+}
+@media (max-width: 400px){
+
+  header{
+    width: 100vw;
+  }  
+
+  .heading{
+    margin: 0 3rem;
+  }
+ 
+  .about .row .counter{
+    width: 100%;
+  }
+
+  .works .box-container .box{
+    width: 100%;
+  }
+
+  .contact .row form{
+    margin: 3rem;
+  }
+
+}
