@@ -19,7 +19,7 @@ $(document).ready(function(){
   });
 
   var typed = new Typed('.typing', {
-    strings: ["Web Developer", "Web Designer", "Graphic Designer"],
+    strings: ["Web Developer", "WordPress Designer", "Graphic Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     showCursor: true,
@@ -28,7 +28,7 @@ $(document).ready(function(){
   });
 
   var typed = new Typed('.typing-1', {
-    strings: ["Web Developer", "Web Designer", "Graphic Designer"],
+    strings: ["Web Developer", "WordPress Designer", "Graphic Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     showCursor: true,
@@ -37,7 +37,7 @@ $(document).ready(function(){
   });
 
   var typed = new Typed('.typing-2', {
-    strings: ["Web Developer", "Web Designer", "Graphic Designer"],
+    strings: ["Web Developer", "WordPress Designer", "Graphic Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     showCursor: true,

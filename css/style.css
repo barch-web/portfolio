@@ -24,6 +24,24 @@ header{
   text-align: center;
 }
 
+header .digits{
+  color: var(--bg1);
+  font-size: 1.5rem;
+  width: 100%; 
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+header .digits h3 {
+ text-transform: lowercase;
+ padding-bottom: 1rem;
+}
+
+header .digits h3 i{
+  margin: .5rem 5rem;
+  text-align: justify;
+}
+
 header .user img{
   height: 23rem;
   width: 15rem;
@@ -34,12 +52,12 @@ header .user img{
 }
 
 header .user .name{
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--prim);
 }
 
 header .user .post{
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: var(--bg1);
   display: inline;
 }
@@ -60,12 +78,13 @@ header .navbar ul li a{
   margin: 1.5rem 0;
   color: var(--prim);
   background: var(--bg1);
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   border-radius: 5rem;
 }
 
 header .navbar ul li a:hover{
   background: var(--bg2);
+  color: var(--bg1);
 }
 
 /*Menu Button Styles*/
@@ -102,15 +121,13 @@ header .navbar ul li a:hover{
   font-family: 'Ubuntu',sans-serif;
   font-weight: 500;
 }
-.home h2{
-  color: #fff;
-  font-size: 3rem;
-}
+
 .home h2 span{
   display: inline;
-  font-size: 3rem;
-  color: var(--bg2);
+  font-size: 2rem;
+  color: var(--bg1);
   font-weight: 600;
+  margin-left: .4rem;
 }
 
 .home p{
@@ -294,20 +311,103 @@ header .navbar ul li a:hover{
   width: 26rem;
   border-radius: 1rem;
   margin: 2rem;
+  padding: 2rem;
   overflow: hidden;
   cursor: pointer;
+  text-align: center;
+  border: .5rem solid var(--bg1);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.works .box-container .box a{
+  background: var(--bg1);
+  padding: .2rem 1rem;
+  border-radius: 1rem;
+  margin-top: 1.8rem;
 }
 
 .works .box-container .box img{
-  height: 100%;
+  height: 70%;
   width: 100%;
   object-fit: cover;
+  transition: all 0.3s ease;
+
 }
-.works .box-container .box:hover img{
-  transform: scale(1.2);
+.works .box-container .box:hover{
+  background: var(--bg2);
+  color: var(--bg1);
 }
 
 /* Contact Section*/
+
+.contact .title::after{
+  content: "get in touch";
+  text-transform: lowercase;
+}
+
+.contact .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact .row .contents {
+  flex: 1 1 30rem;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: #3333;
+  color: #fff;
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+
+.contact .row form .box::placeholder {
+  text-transform: capitalize;
+}
+
+
+.contact .row form .message{
+  height: 15rem;
+  resize: none;
+}
+
+.contact .row .contents .heading{
+  color: #fff;
+  font-size: 2.3rem;
+  padding-bottom: 2rem;
+  margin-left: 3rem;
+}
+
+.contact .row .contents .info h3{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+  margin-left: 3rem;
+  font-weight: normal;
+  width: 100%;
+}
+
+.contact .row .contents .info h3 i{
+  padding-right: 1rem;
+  color: var(--bg1);
+}
 
 
 .top{
@@ -384,6 +484,10 @@ header .navbar ul li a:hover{
 
   .contact .row form{
     margin: 3rem;
+  }
+
+  .contact .row form{
+    margin: 3rem 0;
   }
 
 }
