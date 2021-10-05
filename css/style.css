@@ -488,13 +488,21 @@ header .navbar ul li a:hover{
     font-size: 2rem;
   }
 
-
   .about .row .counter{
     width: 100%;
   }
 
   .works .box-container .box{
     width: 100%;
+  }
+
+  .skills .title::after,
+  .about .title::after,
+  .works .title::after,
+  .contact .title::after{
+    content: "what i know";
+    text-transform: lowercase;
+    font-size: 2.5rem;
   }
 
   .contact .row form{
