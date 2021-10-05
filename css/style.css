@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Pacifico&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@300;400;500;600&display=swap');
 
 :root{
   --bg1: #ffd700;
@@ -6,6 +6,93 @@
   --bg3: #111;
   --prim: #efefef;
   
+}
+
+*{
+  font-family: 'Yeldevi', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+body{
+  background: var(--bg3);
+  overflow: hidden;
+  padding-left: 35rem;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px #0000004d; 
+  background: rgb(70, 69, 69);
+}
+::-webkit-scrollbar-thumb{
+  box-shadow: inset 0 0 6px #00000080; 
+  background: #f30c0c;
+}
+
+.container{
+  height: 100vh;
+}
+
+section{
+  height: 100vh;
+  padding: 1rem;
+}
+
+section .title{
+  position: relative;
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 2.6rem;
+  border-bottom: .3rem solid var(--prim);
+  color: #fff;
+}
+
+section .title::after{
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  font-size: 3rem;
+  color: var(--bg1);
+  padding: 0 1.5rem;
+  background: var(--bg3);
+  transform: translateX(-50%);
+}
+
+.btn{
+  padding: 0.7rem 3rem;
+  background: var(--bg1);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  border-radius: 5rem;
+}
+
+.btn:hover{
+  background: var(--bg2);
+  color: var(--bg1);
+}
+
+.btn i{
+  padding: 0 1.5rem;
+  font-size: 2.2rem;
+  color: var(--bg2);
+}
+.btn:hover i{
+  color: #fff;
 }
 
 /*Header Section Styles*/
@@ -248,7 +335,7 @@ header .navbar ul li a:hover{
 .skills .row .right .line{
   height: 0.7rem;
   width: 100%;
-  background: var(--bg2);
+  background: #535353;
   position: relative;
 }
 
