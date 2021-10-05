@@ -482,6 +482,13 @@ header .navbar ul li a:hover{
     padding-left: 12rem 
   }
 
+  .about .row .info .typing-2{
+    color: var(--bg1);
+    padding: 0 0.5rem;
+    font-size: 2rem;
+  }
+
+
   .about .row .counter{
     width: 100%;
   }
