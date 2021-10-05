@@ -24,24 +24,6 @@ header{
   text-align: center;
 }
 
-header .digits{
-  color: var(--bg1);
-  font-size: 1.5rem;
-  width: 100%; 
-  text-align: justify;
-  margin-bottom: 1rem;
-}
-
-header .digits h3 {
- text-transform: lowercase;
- padding-bottom: 1rem;
-}
-
-header .digits h3 i{
-  margin: .5rem 5rem;
-  text-align: justify;
-}
-
 header .user img{
   height: 23rem;
   width: 15rem;
@@ -405,6 +387,7 @@ header .navbar ul li a:hover{
   margin-left: 3rem;
   font-weight: normal;
   width: 100%;
+  text-transform: lowercase !important;
 }
 
 .contact .row .contents .info h3 i{
