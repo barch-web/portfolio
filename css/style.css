@@ -597,180 +597,146 @@ footer span a:hover{
 
 
 /* responsive media query start */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
 @media (max-width: 1104px) {
   .about .about-content .left img{
-    height: 350px;
-    width: 350px;
+      height: 380px;
+      width: 300px;
   }
 }
 
 @media (max-width: 991px) {
   .max-width{
-    padding: 0 50px;
+      padding: 0 50px;
   }
 }
 @media (max-width: 947px){
   .menu-btn{
-    display: block;
-    z-index: 999;
+      display: block;
+      z-index: 999;
   }
   .menu-btn i.active:before{
-    content: "\f00d";
+      content: "\f00d";
   }
   .navbar .menu{
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: #111;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background: #111;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
   }
   .navbar .menu.active{
-    left: 0;
+      left: 0;
   }
   .navbar .menu li{
-    display: block;
+      display: block;
   }
   .navbar .menu li a{
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 25px;
   }
   .home .home-content .text-2{
-    font-size: 70px;
+      font-size: 70px;
   }
   .home .home-content .text-3{
-    font-size: 35px;
+      font-size: 35px;
   }
   .home .home-content a{
-    font-size: 23px;
-    padding: 10px 30px;
+      font-size: 23px;
+      padding: 10px 30px;
   }
   .max-width{
-    max-width: 930px;
+      max-width: 930px;
   }
   .about .about-content .column{
-    width: 100%;
+      width: 100%;
   }
   .about .about-content .left{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 60px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px;
   }
   .about .about-content .right{
-    flex: 100%;
+      flex: 100%;
   }
   .services .serv-content .card{
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+      width: calc(50% - 10px);
+      margin-bottom: 20px;
   }
   .skills .skills-content .column,
   .contact .contact-content .column{
-    width: 100%;
-    margin-bottom: 35px;
+      width: 100%;
+      margin-bottom: 35px;
   }
 }
 
-@media (max-width: 600px) {
-  
+@media (max-width: 690px) {
   .max-width{
-    padding: 0 23px;
+      padding: 0 23px;
   }
   .home .home-content .text-2{
-    font-size: 60px;
+      font-size: 60px;
   }
   .home .home-content .text-3{
-    font-size: 32px;
+      font-size: 32px;
   }
   .home .home-content a{
-    font-size: 20px;
+      font-size: 20px;
   }
-  .about .about-content .left img{
-    height: 350px;
-    width: 250px;
-  }
-  .skills .skills-content .left .box{
-    width: 100%;
-  }
-  .services .max-width .serv-content .card .box{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .works .max-width .owl-carousel{
-    width: 500px;
-    height: 400px;
-  }
-  .works .max-width .carousel .card .box img{
-    width: 100%;
-    height: 250px;
-  }
-  .works .max-width .carousel .card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    object-fit: cover;
-    
-  }
-  .works .max-width .carousel .card .box{
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    object-fit: cover;
+  .services .serv-content .card{
+      width: 100%;
   }
 }
 
-@media (max-width: 400px) {
-  .home .home-content{
-    display: block;
-    width: 100%;
-  }
-  .home .home-content .text-1{
-    font-size: 18px;
-  }
+@media (max-width: 500px) {
   .home .home-content .text-2{
-    font-size: 35px;
+      font-size: 50px;
   }
   .home .home-content .text-3{
-    font-size: 22px;
-  }
-  .about .about-content .left{
-    width: 200px;
-    height: 300px;
-    background: none;
-    border: none;
-  }
-  .about .about-content .left img{
-    height: 300px;
-    width: 200px;
+      font-size: 27px;
   }
   .about .about-content .right .text,
   .skills .skills-content .left .text{
-    font-size: 19px;
-  }
-  .skills .skills-content .left .box{
-    width: 100%;
+      font-size: 19px;
   }
   .contact .right form .fields{
-    flex-direction: column;
+      flex-direction: column;
   }
   .contact .right form .name,
   .contact .right form .email{
-    margin: 0;
+      margin: 0;
   }
   .right form .error-box{
-    width: 150px;
+     width: 150px;
   }
   .scroll-up-btn{
-    right: 15px;
-    bottom: 15px;
-    height: 38px;
-    width: 35px;
-    font-size: 23px;
-    line-height: 38px;
+      right: 15px;
+      bottom: 15px;
+      height: 38px;
+      width: 35px;
+      font-size: 23px;
+      line-height: 38px;
   }
 }
