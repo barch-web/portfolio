@@ -46,7 +46,7 @@ section{
 }
 
 .about .about-content,
-.services .serv-content,
+.services .services-content,
 .skills .skills-content,
 .contact .contact-content{
   display: flex;
@@ -387,7 +387,7 @@ section .title::after{
 .services .title::after{
   content: "what i do";
 }
-.services .serv-content .card{
+.services .services-content .card{
   width: calc(33% - 20px);
   text-align: center;
   background: var(--style);
@@ -397,29 +397,29 @@ section .title::after{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.services .services-content .card:hover{
   background: transparent;
 }
-.services .serv-content .card .box{
+.services .services-content .card .box{
   transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.services .servives-content .card:hover .box{
   transform: scale(1.05);
 }
-.services .serv-content .card i{
+.services .services-content .card i{
   font-size: 50px;
   color: var(--light);
   transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.services .services-content .card:hover i{
   color: var(--dark);
 }
-.services .serv-content .card .text{
+.services .services-content .card .text{
   font-size: 20px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.services .serv-content .card p{
+.services .services-content .card p{
   font-size: 13px;
 }
 
@@ -596,24 +596,6 @@ footer span a:hover{
 }
 
 
-/* responsive media query start */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
 
 @media (max-width: 1104px) {
   .about .about-content .left img{
@@ -629,15 +611,15 @@ footer span a:hover{
 }
 @media (max-width: 947px){
   .menu-btn{
-      display: block;
-      z-index: 999;
+    display: block;
+    z-index: 999;
   }
   .menu-btn i.active:before{
       content: "\f00d";
   }
   .navbar .menu{
-      position: fixed;
-      height: 100vh;
+    position: fixed;
+    height: 100vh;
       width: 100%;
       left: -100%;
       top: 0;
