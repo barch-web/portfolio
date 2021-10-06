@@ -690,8 +690,9 @@ footer span a:hover{
   .home .home-content a{
       font-size: 20px;
   }
-  .services .serv-content .card{
-      width: 100%;
+  .services .services-content .card{
+    width: 100%;
+    margin: 12px;
   }
 }
 
