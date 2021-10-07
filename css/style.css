@@ -704,8 +704,12 @@ footer span a:hover{
     width: 100%;
   }
   .home .home-content .text-3{
-      font-size: 25px;
+      font-size: 20px;
   }
+  .home .home-content .text-3 ruby-span{
+    font-size: 18px;
+  }
+  
   .about .about-content .right .text,
   .skills .skills-content .left .text{
       font-size: 19px;
