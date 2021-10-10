@@ -380,7 +380,9 @@ section .title::after{
 .skills-content .right .adb::before{
   width: 80%;
 }
-
+.skills-content .right .git::before{
+  width: 80%;
+}
 
 /* services section styling */
 
