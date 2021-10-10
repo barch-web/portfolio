@@ -369,16 +369,16 @@ section .title::after{
   width: 90%;
 }
 .skills-content .right .css::before{
-  width: 60%;
-}
-.skills-content .right .js::before{
   width: 80%;
 }
-.skills-content .right .recat::before{
-  width: 50%;
+.skills-content .right .js::before{
+  width: 70%;
+}
+.skills-content .right .react::before{
+  width: 60%;
 }
 .skills-content .right .adb::before{
-  width: 70%;
+  width: 80%;
 }
 
 
