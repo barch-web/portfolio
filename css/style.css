@@ -597,7 +597,7 @@ footer span a:hover{
   text-decoration: underline;
 }
 
-
+/*Responsiveness*/
 
 @media (max-width: 1104px) {
   .about .about-content .left img{
@@ -699,8 +699,11 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+  .home .home-content .text-1{
+    font-size: 18px;
+  }
   .home .home-content .text-2{
-      font-size: 40px;
+      font-size: 35px;
   }
   .home .home-content{
     width: 100%;
