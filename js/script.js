@@ -48,7 +48,7 @@ $(document).ready(function(){
         loop: true
     });
 
-    // owl carousel script
+   /* // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
@@ -69,5 +69,33 @@ $(document).ready(function(){
                 nav: false
             }
         }
-    });
+    });*/
+});
+
+
+//counter
+$(document).ready(function () {
+  
+  $(".counter-num").counterUp({
+    delay: 10,
+    time: 1000,
+  });
+    
+})
+
+// add bx slider to screens
+
+$(document).ready(function () {
+  
+  'use strict';
+
+  $(".bxslider").bxSlider({
+
+    slideWidth: 292.5,
+    auto: true,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin: 50
+  });
+
 });

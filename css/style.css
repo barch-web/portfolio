@@ -377,6 +377,11 @@ section .title::after{
 .skills-content .right .react::before{
   width: 60%;
 }
+
+.skills-content .right .wp::before{
+  width: 90%;
+}
+
 .skills-content .right .adb::before{
   width: 80%;
 }
@@ -425,69 +430,27 @@ section .title::after{
   font-size: 13px;
 }
 
-/* teams section styling */
+/* ============== works section styling ==================*/
+
 .works .title::after{
   content: "what I did";
 }
-.works .carousel .card{
-  border-radius: 6px;
-  padding: 25px 35px;
-  text-align: center;
-  overflow: hidden;
-  transform: scale(1.09);
-}
-.works .carousel .card:hover{
-    background: transparent;
-}
-.works .carousel .card .box{
+
+.works .container .item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
-.works .carousel .card:hover .box{
-  transform: scale(1.05);
-}
-.works .carousel .card .text{
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-.works .carousel .card img{
-  height: 200px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 8%;
-  border: 1px solid var(--dark);
-  transition: all 0.3s ease;
-}
-.works .carousel .card:hover img{
-  border-color: transparent;
-}
-.owl-dots{
-  text-align: center;
-  margin-top: 20px;
-}
-.owl-dot{
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none!important;
-  border-radius: 50%;
-  border: 1px solid var(--style)!important;
-  transition: all 0.3s ease;
-}
-.owl-dot.active{
-  width: 35px;
-  border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-  background: var(--style)!important;
+
+.works .container .item:hover{
+    background: transparent;
+    transform: scale(1.05)
 }
 
-/* contact section styling */
+/*======================= contact section styling===================== */
+
 .contact .title::after{
   content: "connect here";
 }
